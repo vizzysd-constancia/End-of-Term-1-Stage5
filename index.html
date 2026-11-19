@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#173b5e">
+<title>Grade 5 ESL | End of Term Review 1</title>
+<style>
+:root{--navy:#173b5e;--blue:#286b9c;--sky:#eaf4fb;--teal:#168b83;--mint:#e7f7f3;--gold:#f2b84b;--ink:#203246;--muted:#66788a;--paper:#f5f8fc;--line:#dce5ee;--white:#fff;--red:#b94b4b;--shadow:0 12px 35px rgba(23,59,94,.09)}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}
+button,input,select,textarea{font:inherit}button{cursor:pointer;border:0}
+.topbar{background:linear-gradient(110deg,#173b5e,#286b9c);color:white;padding:18px 22px;position:sticky;top:0;z-index:5;box-shadow:0 4px 18px #173b5e22}
+.topinner{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:12px}.brandmark{width:42px;height:42px;border-radius:13px;background:#ffffff20;display:grid;place-items:center;font-size:23px}.brand small{display:block;color:#cfe1f1;font-size:11px;letter-spacing:.12em;text-transform:uppercase}.brand strong{font-size:16px}.student-chip{font-size:13px;color:#e5f1fa;text-align:right}
+.shell{max-width:1100px;margin:26px auto;padding:0 18px 40px;display:grid;grid-template-columns:245px minmax(0,1fr);gap:22px}
+.sidebar{align-self:start;background:white;border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:var(--shadow);position:sticky;top:92px}
+.side-title{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:800;margin:3px 8px 12px}
+.navlist{display:grid;gap:5px}.navitem{width:100%;text-align:left;background:transparent;color:#53677b;border-radius:11px;padding:10px 11px;display:flex;gap:10px;align-items:center;font-size:13px}
+.navitem .num{width:25px;height:25px;display:grid;place-items:center;border-radius:8px;background:#f0f4f8;font-size:11px;font-weight:800;flex-shrink:0}
+.navitem.active{background:var(--sky);color:var(--navy);font-weight:750}.navitem.active .num{background:var(--navy);color:white}.navitem.done .num{background:var(--mint);color:var(--teal)}
+.sideprogress{margin:18px 7px 4px}.progressmeta{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:7px}.bar{height:7px;border-radius:20px;background:#edf1f5;overflow:hidden}.bar>span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--teal),#57b9a9);border-radius:20px;transition:width .25s}
+main{min-width:0}.screen{display:none;background:white;border:1px solid var(--line);border-radius:22px;padding:clamp(20px,4vw,38px);box-shadow:var(--shadow);animation:appear .25s ease}.screen.active{display:block}@keyframes appear{from{opacity:.5;transform:translateY(5px)}to{opacity:1;transform:none}}
+.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.13em;color:var(--teal);font-weight:850;margin-bottom:9px}
+h1{font-size:clamp(27px,4vw,39px);line-height:1.15;color:var(--navy);margin:0 0 12px;letter-spacing:-.03em}h2{font-size:25px;line-height:1.2;color:var(--navy);margin:0 0 10px}h3{font-size:17px;color:var(--navy);margin:0 0 8px}
+.lead{color:var(--muted);font-size:16px;max-width:720px;margin:0 0 24px}.muted{color:var(--muted)}.small{font-size:12px;color:var(--muted)}
+.hero{background:linear-gradient(135deg,#eaf4fb,#e9f7f4);border-radius:18px;padding:25px;margin:20px 0 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}.hero-emoji{font-size:65px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.field{display:grid;gap:6px;margin:13px 0}.field label{font-size:13px;font-weight:750;color:#40576c}.field input,.field select,.field textarea{width:100%;border:1px solid #cfdbe6;border-radius:11px;padding:12px 13px;background:#fff;color:var(--ink);outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px #286b9c18}.field textarea{min-height:92px;resize:vertical}
+.btnrow{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:28px;flex-wrap:wrap}.btn{padding:11px 18px;border-radius:11px;font-weight:750;font-size:14px;transition:.15s}.btn.primary{background:var(--navy);color:white}.btn.primary:hover{background:#22547e;transform:translateY(-1px)}.btn.secondary{background:#edf3f8;color:var(--navy)}.btn.teal{background:var(--teal);color:white}.btn:disabled{opacity:.42;cursor:not-allowed;transform:none}.error{color:var(--red);font-size:13px;font-weight:650;min-height:20px}
+.card{border:1px solid var(--line);border-radius:15px;padding:16px;background:#fff}.soft{background:#f6f9fc}.tag{display:inline-block;border-radius:20px;padding:4px 9px;background:var(--sky);color:var(--blue);font-size:11px;font-weight:800}.callout{padding:14px 16px;border-radius:13px;background:#fff8e8;border:1px solid #f6e3b6;color:#77591d;font-size:13px;margin:16px 0}
+.checklist{display:grid;gap:10px}.checkrow{display:flex;gap:10px;align-items:flex-start;padding:11px;border:1px solid var(--line);border-radius:12px}.checkrow input{margin-top:5px;accent-color:var(--teal)}
+.wordbank{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 16px}.word{background:#edf5fb;color:#245b83;border:1px solid #d7e8f4;padding:7px 11px;border-radius:20px;font-size:13px;font-weight:700}
+.optionlist{display:grid;gap:9px;margin:13px 0}.option{border:1px solid var(--line);border-radius:12px;padding:11px 13px;display:flex;gap:10px;align-items:flex-start;cursor:pointer}.option:has(input:checked){border-color:var(--blue);background:#f0f7fc}.option input{margin-top:5px;accent-color:var(--blue)}
+.feedback{margin-top:12px;padding:11px 13px;border-radius:11px;font-size:13px;display:none}.feedback.show{display:block}.feedback.good{background:#e9f7f1;color:#176d55}.feedback.try{background:#fff4e8;color:#8a5a1c}
+.matchrow{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:center;margin:9px 0}.matchrow select{padding:10px;border:1px solid var(--line);border-radius:10px;min-width:0}
+.profile{background:#f7fafc;border-radius:14px;padding:16px;border-left:4px solid var(--teal);font-size:14px}.profile p{margin:6px 0}
+.tablewrap{overflow:auto}.comparetable{width:100%;border-collapse:collapse;font-size:13px}.comparetable th,.comparetable td{border:1px solid var(--line);padding:10px;text-align:left}.comparetable th{background:#f0f6fa;color:var(--navy)}
+.city{cursor:pointer;display:block}.city input{accent-color:var(--teal)}.city:has(input:checked){border-color:var(--teal);background:#f0faf7}
+.quizhead{display:flex;justify-content:space-between;gap:12px;align-items:center;margin:12px 0}.qnum{font-size:12px;color:var(--muted);font-weight:800}.qpanel{background:#f6f9fc;padding:20px;border-radius:15px}
+.resultbig{font-size:38px;color:var(--teal);font-weight:900;letter-spacing:-.04em}
+.footerhint{margin-top:16px;color:var(--muted);font-size:12px}
+details{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0}summary{cursor:pointer;font-weight:750;color:var(--navy)}
+@media(max-width:800px){.shell{grid-template-columns:1fr}.sidebar{position:static}.navlist{grid-template-columns:repeat(2,minmax(0,1fr))}.navitem{font-size:12px}.sideprogress{margin-top:12px}.student-chip{display:none}}
+@media(max-width:560px){.grid2,.grid3{grid-template-columns:1fr}.hero{align-items:flex-start}.hero-emoji{font-size:42px}.screen{padding:20px}.navlist{grid-template-columns:1fr 1fr}.topbar{padding:13px}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="topinner"><div class="brand"><div class="brandmark">✦</div><div><small>VinSchool • English / ESL</small><strong>Interactive Learning Studio</strong></div></div><div class="student-chip" id="topStudent">Grade 5 · End of Term 1</div></div></header>
+<div class="shell">
+<aside class="sidebar">
+ <div class="side-title">Your learning journey</div>
+ <nav class="navlist" id="nav"></nav>
+ <div class="sideprogress"><div class="progressmeta"><span>Lesson progress</span><strong id="pct">0%</strong></div><div class="bar"><span id="bar"></span></div></div>
+ <p class="small" style="margin:13px 7px 3px">Your answers stay in this browser until you download your results. Refreshing may erase them.</p>
+</aside>
+<main id="main">
+<section class="screen active" data-title="Registration">
+ <div class="eyebrow">Welcome • Grade 5 English</div><h1>Welcome to Your Interactive Lesson!</h1>
+ <p class="lead">Please enter your information before starting your End of Term Review 1.</p>
+ <div class="hero"><div><span class="tag">UNITS 1–5</span><h2 style="margin-top:12px">Ready to review?</h2><p class="muted" style="margin-bottom:0">Compare personalities, identify symptoms, choose a city, explore change over time and share your thoughts about Tet.</p></div><div class="hero-emoji">📚</div></div>
+ <div class="grid2"><div class="field"><label for="studentName">Student name *</label><input id="studentName" autocomplete="name" placeholder="Enter your full name"></div><div class="field"><label for="studentClass">Class *</label><select id="studentClass"><option value="">Choose your class</option><option>5A1</option><option>5A2</option><option>5A3</option><option>5A4</option><option>5A5</option><option>5A6</option><option>5A7</option><option>5A8</option></select></div></div>
+ <p class="small">No account or password is needed. Your details are used only in your downloaded results file.</p><div class="error" id="regError"></div>
+ <div class="btnrow"><span class="small">Three lesson periods • 35 minutes each</span><button class="btn primary" onclick="register()">Start Lesson →</button></div>
+</section>
+
+<section class="screen" data-title="Learning Goals">
+ <div class="eyebrow">Section A • Learning goals</div><h1>What will I learn?</h1><p class="lead">By the end of this review, you will be able to show what you know and can do.</p>
+ <div class="checklist">
+ <div class="checkrow"><span>🧑‍🤝‍🧑</span><div><b>I can compare two friends’ personalities.</b><div class="small">I use adjectives and connectives such as both…and, while, or but.</div></div></div>
+ <div class="checkrow"><span>🤧</span><div><b>I can identify symptoms in a short talk.</b><div class="small">I listen for the symptoms each speaker describes.</div></div></div>
+ <div class="checkrow"><span>🏙️</span><div><b>I can choose a city and give reasons.</b><div class="small">I support my preference with facts from a city card.</div></div></div>
+ <div class="checkrow"><span>🕰️</span><div><b>I can identify the main idea about a place then and now.</b><div class="small">I find a detail that supports the main idea.</div></div></div>
+ <div class="checkrow"><span>🎉</span><div><b>I can describe a festival and express my feelings.</b><div class="small">I give a reason using a detail about the celebration.</div></div></div></div>
+ <div class="callout"><b>Success tip:</b> Read carefully, listen before looking at the transcript, and use details from the information cards to support your answers.</div>
+ <div class="btnrow"><button class="btn secondary" onclick="prev()">← Previous</button><button class="btn primary" onclick="go(2)">Start learning →</button></div>
+</section>
+
+<section class="screen" data-title="Warm-up">
+ <div class="eyebrow">Warm-up • 5 minutes</div><h1>Personality Word Splash</h1><p class="lead">Look at the two fictional friends. What words might describe them? Write one word for each person and compare your ideas with a partner.</p>
+ <div class="grid2"><div class="card soft"><div style="font-size:42px">👧🏻</div><h3>Friend A</h3><p class="muted">This friend listens carefully and helps classmates.</p><div class="field"><label for="warmA">One personality word</label><input id="warmA" placeholder="e.g. helpful"></div></div><div class="card soft"><div style="font-size:42px">🧑🏻</div><h3>Friend B</h3><p class="muted">This friend volunteers to speak in front of the class.</p><div class="field"><label for="warmB">One personality word</label><input id="warmB" placeholder="e.g. confident"></div></div></div>
+ <div class="field"><label for="warmWhy">What picture or action clue helped you choose?</label><textarea id="warmWhy" placeholder="I chose these words because..."></textarea></div>
+ <div class="btnrow"><button class="btn secondary" onclick="prev()">← Previous</button><button class="btn primary" onclick="complete(2)">Complete warm-up →</button></div>
+</section>
+
+<section class="screen" data-title="Personality Vocabulary">
+ <div class="eyebrow">Period 1 • Activity 1 • 7 minutes</div><h1>Personality Adjectives & Connectives</h1><p class="lead">Match each adjective to its meaning. Then practise using connectives to compare people.</p>
+ <div class="wordbank"><span class="word">helpful</span><span class="word">shy</span><span class="word">confident</span><span class="word">patient</span></div>
+ <div id="personMatch">
+ <div class="matchrow"><b>1. helpful</b><select data-answer="ready to help others"><option value="">Choose a meaning</option><option>ready to help others</option><option>quiet or nervous with people</option><option>able to wait calmly</option><option>sure about yourself</option></select></div>
+ <div class="matchrow"><b>2. shy</b><select data-answer="quiet or nervous with people"><option value="">Choose a meaning</option><option>ready to help others</option><option>quiet or nervous with people</option><option>able to wait calmly</option><option>sure about yourself</option></select></div>
+ <div class="matchrow"><b>3. confident</b><select data-answer="sure about yourself"><option value="">Choose a meaning</option><option>ready to help others</option><option>quiet or nervous with people</option><option>able to wait calmly</option><option>sure about yourself</option></select></div>
+ <div class="matchrow"><b>4. patient</b><select data-answer="able to wait calmly"><option value="">Choose a meaning</option><option>ready to help others</option><option>quiet or nervous with people</option><option>able to wait calmly</option><option>sure about yourself</option></select></div></div>
+ <h3 style="margin-top:22px">Choose the best connective</h3>
+ <div class="field"><label for="connect1">“Lan and Minh are ___ helpful.”</label><select id="connect1"><option value="">Choose</option><option>both</option><option>while</option><option>but</option></select></div>
+ <div class="field"><label for="connect2">“Lan is quiet, ___ Minh is confident.”</label><select id="connect2"><option value="">Choose</option><option>both</option><option>while</option><option>and</option></select></div>
+ <button class="btn secondary" onclick="checkPerson()">Check answers</button><div class="feedback" id="personFeedback"></div>
+ <div class="field"><label for="personSentence">Write your own comparison sentence</label><textarea id="personSentence" placeholder="Both friends are..."></textarea></div>
+ <div class="btnrow"><button class="btn secondary" onclick="prev()">← Previous</button><button class="btn primary" onclick="complete(3)">Complete activity →</button></div>
+</section>
+
+<section class="screen" data-title="Read Two Friends">
+ <div class="eyebrow">Period 1 • Activity 2 • 11 minutes</div><h1>Read: Two Friends, Two Personalities</h1><p class="lead">Read both profiles. Underline the actions that show each person’s personality. Then complete the comparison chart.</p>
+ <div class="grid2"><div class="profile"><h3>Lan</h3><p>Lan notices a classmate cannot find a book and helps her look. In group work, Lan listens until others finish, shares her materials, and speaks softly. She likes to prepare before speaking to a large group.</p></div><div class="profile"><h3>Minh</h3><p>Minh shares his supplies and helps carry class books. He volunteers to present and speaks confidently. When excited, he sometimes interrupts because he wants to share his idea right away.</p></div></div>
+ <h3 style="margin-top:20px">Complete the comparison chart</h3><div class="tablewrap"><table class="comparetable"><thead><tr><th>Question</th><th>Your answer</th></tr></thead><tbody>
+ <tr><td>One quality both friends share</td><td><input id="sharedQuality" placeholder="They are both..."></td></tr>
+ <tr><td>One way Lan is different</td><td><input id="lanDifferent" placeholder="Lan is..."></td></tr>
+ <tr><td>One way Minh is different</td><td><input id="minhDifferent" placeholder="Minh is..."></td></tr>
+ <tr><td>One action that supports your idea</td><td><input id="profileEvidence" placeholder="The text says..."></td></tr>
+ </tbody></table></div>
+ <div class="field"><label for="readCompare">Write or say one comparison sentence</label><textarea id="readCompare" placeholder="Both Lan and Minh are..., while..."></textarea></div>
+ <div class="btnrow"><button class="btn secondary" onclick="prev()">← Previous</button><button class="btn primary" onclick="complete(4)">Complete reading →</button></div>
+</section>
+
+<section class="screen" data-title="Write a Comparison">
+ <div class="eyebrow">Period 1 • Activity 3 • 9 minutes</div><h1>Write: Compare Two Friends</h1><p class="lead">Write two connected sentences. Use at least two personality adjectives and a connective.</p>
+ <div class="wordbank"><span class="word">helpful</span><span class="word">shy</span><span class="word">confident</span><span class="word">patient</span><span class="word">both…and</span><span class="word">while</span><span class="word">but</span></div>
+ <div class="callout">Sentence starters: “Both friends are…” • “Lan is…, while Minh is…” • “Lan…, but Minh…”</div>
+ <div class="field"><label for="writeCompare">My two comparison sentences</label><textarea id="writeCompare" style="min-height:145px" placeholder="Both Lan and Minh are helpful. Lan is..., while Minh is..."></textarea></div>
+ <div class="checklist"><label class="checkrow"><input type="checkbox" id="peer1"> My comparison is clear.</label><label class="checkrow"><input type="checkbox" id="peer2"> My adjectives match the text.</label><label class="checkrow"><input type="checkbox" id="peer3"> My connective makes sense.</label></div>
+ <div class="btnrow"><button class="btn secondary" onclick="prev()">← Previous</button><button class="btn primary" onclick="complete(5)">Complete writing →</button></div>
+</section>
+
+<section class="screen" data-title="Symptom Vocabulary">
+ <div class="eyebrow">Period 2 • Activity 4 • 7 minutes</div><h1>Vocabulary: Symptoms</h1><p class="lead">Match each symptom to the description. Say each word aloud to practise pronunciation.</p>
+ <div class="wordbank"><span class="word">cough</span><span class="word">fever</span><span class="word">sore throat</span><span class="word">headache</span><span class="word">runny nose</span></div>
+ <div id="symptomMatch">
+ <div class="matchrow"><b>1. Your head hurts</b><select data-answer="headache"><option value="">Choose a symptom</option><option>cough</option><option>fever</option><option>sore throat</option><option>headache</option><option>runny nose</option></select></div>
+ <div class="matchrow"><b>2. You keep coughing</b><select data-answer="cough"><option value="">Choose a symptom</option><option>cough</option><option>fever</option><option>sore throat</option><option>headache</option><option>runny nose</option></select></div>
+ <div class="matchrow"><b>3. Your throat hurts</b><select data-answer="sore throat"><option value="">Choose a symptom</option><option>cough</option><option>fever</option><option>sore throat</option><option>headache</option><option>runny nose</option></select></div>
+ <div class="matchrow"><b>4. Your nose keeps running</b><select data-answer="runny nose"><option value="">Choose a symptom</option><option>cough</option><option>fever</option><option>sore throat</option><option>headache</option><option>runny nose</option></select></div>
+ <div class="matchrow"><b>5. You feel hot and unwell</b><select data-answer="fever"><option value="">Choose a symptom</option><option>cough</option><option>fever</option><option>sore throat</option><option>headache</option><option>runny nose</option></select></div></div>
+ <button class="btn secondary" onclick="checkMatch('symptomMatch','symptomFeedback')">Check answers</button><div class="feedback" id="symptomFeedback"></div>
+ <div class="field"><label for="symptomSentence">Choose one symptom and use it in a sentence</label><input id="symptomSentence" placeholder="I have a..."></div>
+ <div class="btnrow"><button class="btn secondary" onclick="prev()">← Previous</button><button class="btn primary" onclick="complete(6)">Complete vocabulary →</button></div>
+</section>
+
+<section class="screen" data-title="Listening: Symptoms">
+ <div class="eyebrow">Period 2 • Activity 5 • 11 minutes</div><h1>Listen First: What Is Each Speaker Suffering From?</h1><p class="lead">Your teacher will read each talk twice. Do not open the transcript until you have recorded your first answers.</p>
+ <div class="callout"><b>Listening rule:</b> First, listen and answer independently. Your first answers are the listening evidence. You may check the transcript afterwards in a different colour.</div>
+ <div class="grid2"><div class="card"><h3>Speaker A</h3><p class="muted">Listen and write the symptoms you hear.</p><textarea id="speakerA" placeholder="Speaker A has..."></textarea></div><div class="card"><h3>Speaker B</h3><p class="muted">Listen and write the symptoms you hear.</p><textarea id="speakerB" placeholder="Speaker B has..."></textarea></div></div>
+ <details><summary>Teacher: reveal the listening transcript after students answer</summary><p><b>Speaker A:</b> “Since this morning, my head hurts. My throat feels sore, and I have a dry cough. I feel tired too.”</p><p><b>Speaker B:</b> “My nose keeps running and I sneeze a lot. My eyes feel watery. I do not have a fever.”</p></details>
+ <div class="field"><label for="listenEvidence">After checking the transcript, write one phrase that confirms a symptom.</label><input id="listenEvidence" placeholder="The speaker says..."></div>
+ <div class="btnrow"><button class="btn secondary" onclick="prev()">← Previous</button><button class="btn primary" onclick="complete(7)">Save first listening answers →</button></div>
+</section>
+
+<section class="screen" data-title="Choose a City">
+ <div class="eyebrow">Period 2 • Activity 6 • 9 minutes</div><h1>Which City Would You Choose?</h1><p class="lead">Read the city cards. Choose one city you would like to visit or live in. Give two reasons from the card.</p>
+ <div class="grid3">
+ <label class="card city"><input type="radio" name="city" value="Riverside City"> <h3>🌳 Riverside City</h3><p class="small">Walking paths beside a river, several parks, and weekend outdoor events. Most attractions are outdoors.</p></label>
+ <label class="card city"><input type="radio" name="city" value="Harbour City"> <h3>⚓ Harbour City</h3><p class="small">Museums, a large food market, and lively evening streets. The central area is busy.</p></label>
+ <label class="card city"><input type="radio" name="city" value="Garden City"> <h3>🌼 Garden City</h3><p class="small">Public gardens, leafy neighbourhoods, and quiet bike paths. There are fewer late-night activities.</p></label>
+ </div>
+ <div class="field"><label for="cityReason1">Reason 1 — use a fact from the card</label><input id="cityReason1" placeholder="I like it because..."></div>
+ <div class="field"><label for="cityReason2">Reason 2 — use another fact from the card</label><input id="cityReason2" placeholder="It also has..."></div>
+ <div class="field"><label for="cityPreference">Write your complete preference sentence</label><textarea id="cityPreference" placeholder="I prefer... because..."></textarea></div>
+ <div class="btnrow"><button class="btn secondary" onclick="prev()">← Previous</button><button class="btn primary" onclick="complete(8)">Complete city choice →</button></div>
+</section>
+
+<section class="screen" data-title="Then and Now Vocabulary">
+ <div class="eyebrow">Period 3 • Activity 7 • 7 minutes</div><h1>A Place Then and Now</h1><p class="lead">Learn the words that help us describe how a place changes over time.</p>
+ <div class="grid3"><div class="card soft"><h3>🕰️ Past</h3><p class="small">A time before now.</p></div><div class="card soft"><h3>📍 Present</h3><p class="small">The time happening now.</p></div><div class="card soft"><h3>🏗️ Restored</h3><p class="small">Repaired or brought back to a good condition.</p></div></div>
+ <div class="wordbank"><span class="word">past</span><span class="word">present</span><span class="word">used to</span><span class="word">now</span><span class="word">restored</span><span class="word">modern</span></div>
+ <div class="field"><label for="thenNow1">“Used to” describes something that happened...</label><select id="thenNow1"><option value="">Choose</option><option>before</option><option>now</option></select></div>
+ <div class="field"><label for="thenNow2">Choose a word to complete: “The square is greener ___.”</label><select id="thenNow2"><option value="">Choose</option><option>now</option><option>used to</option><option>past</option></select></div>
+ <div class="field"><label for="thenNowSentence">Write one sentence contrasting then and now</label><textarea id="thenNowSentence" placeholder="In the past..., but now..."></textarea></div>
+ <div class="btnrow"><button class="btn secondary" onclick="prev()">← Previous</button><button class="btn primary" onclick="complete(9)">Complete vocabulary →</button></div>
+</section>
+
+<section class="screen" data-title="Listening: Main Idea">
+ <div class="eyebrow">Period 3 • Activity 8 • 11 minutes</div><h1>Listen First: Find the Main Idea</h1><p class="lead">Listen to the presentation twice. Choose the main idea before you see the script.</p>
+ <div class="callout"><b>Important:</b> Submit your first choice before revealing the script. Your first response is the listening evidence; corrections are for feedback only.</div>
+ <div class="qpanel"><h3>What is the presentation mostly about?</h3>
+ <div class="optionlist" id="mainIdeaOptions">
+ <label class="option"><input type="radio" name="mainIdea" value="A"> A. The square changed from a place people passed through into a greener community place.</label>
+ <label class="option"><input type="radio" name="mainIdea" value="B"> B. The square is mainly about a new market.</label>
+ <label class="option"><input type="radio" name="mainIdea" value="C"> C. People no longer visit the square.</label></div>
+ <button class="btn secondary" onclick="submitMainIdea()">Record my first answer</button><div id="mainIdeaFeedback" class="feedback"></div>
+ </div>
+ <details id="squareTranscript"><summary>Reveal presentation script after recording your first answer</summary><p>“Years ago, Old Harbour Square was mostly an open paved space. People crossed it to reach the ferry and bought fruit at a small market. There were few trees or places to sit. Today, the square has shaded trees, benches, and a play area. The old market remains at one edge, but families also come to meet and relax. The square has changed from a place to pass through into a greener place for the community.”</p></details>
+ <div class="field"><label for="squareDetail1">Supporting detail 1</label><input id="squareDetail1" placeholder="One detail from the presentation..."></div><div class="field"><label for="squareDetail2">Supporting detail 2</label><input id="squareDetail2" placeholder="Another detail..."></div>
+ <div class="btnrow"><button class="btn secondary" onclick="prev()">← Previous</button><button class="btn primary" onclick="complete(10)">Complete listening →</button></div>
+</section>
+
+<section class="screen" data-title="Festival Response">
+ <div class="eyebrow">Period 3 • Activity 9 • 9 minutes</div><h1>Read & Write: My Festival Response</h1><p class="lead">Read the information card about Tet. Describe the festival, share your feeling, and give a reason connected to a detail.</p>
+ <div class="card soft"><h3>🎊 Tet in Vietnam</h3><p>At Tet, many families clean and decorate their homes, prepare special foods, and visit relatives. Families gather to welcome the new year. Children may receive lucky money.</p></div>
+ <div class="wordbank"><span class="word">happy</span><span class="word">excited</span><span class="word">thankful</span><span class="word">proud</span><span class="word">enjoy</span><span class="word">because</span></div>
+ <div class="field"><label for="festivalResponse">Write three sentences: describe Tet; express an opinion or feeling; give a reason from the card.</label><textarea id="festivalResponse" style="min-height:150px" placeholder="Tet is... I feel... because..."></textarea></div>
+ <div class="field"><label for="festivalExit">Exit ticket: “I feel ___ about Tet because ___.”</label><input id="festivalExit" placeholder="I feel... because..."></div>
+ <div class="btnrow"><button class="btn secondary" onclick="prev()">← Previous</button><button class="btn primary" onclick="complete(11)">Complete festival response →</button></div>
+</section>
+
+<section class="screen" data-title="Review Quiz">
+ <div class="eyebrow">Review & Quiz • 10 questions</div><h1>Show What You Know!</h1><p class="lead">Answer each question. You can move back and change your answers before submitting the quiz.</p>
+ <div class="quizhead"><span class="qnum" id="qProgress">Question 1 of 10</span><span class="tag" id="qStatus">Not submitted</span></div><div class="bar"><span id="qBar" style="width:10%"></span></div>
+ <div class="qpanel" style="margin-top:16px"><h3 id="questionText"></h3><div class="optionlist" id="quizOptions"></div></div>
+ <div class="btnrow"><button class="btn secondary" id="qPrev" onclick="quizMove(-1)">← Previous</button><button class="btn primary" id="qNext" onclick="quizMove(1)">Next question →</button></div>
+ <div class="btnrow" style="border-top:1px solid var(--line);padding-top:18px"><span class="small">Your answers are saved as you go.</span><button class="btn teal" onclick="submitQuiz()">Submit quiz</button></div>
+ <div id="quizResult" class="feedback"></div>
+ <div class="btnrow"><button class="btn secondary" onclick="retryQuiz()">Retry quiz</button><button class="btn primary" onclick="complete(12)">Continue to reflection →</button></div>
+</section>
+
+<section class="screen" data-title="Reflection & Homework">
+ <div class="eyebrow">Section F & G • Reflection</div><h1>Think About Your Learning</h1><p class="lead">Reflect honestly. Your written responses will be included in your results for your teacher to review.</p>
+ <div class="field"><label for="reflectionLearned">What is one new thing you learned?</label><textarea id="reflectionLearned" placeholder="Today I learned..."></textarea></div>
+ <div class="field"><label for="reflectionDifficult">What did you find difficult?</label><textarea id="reflectionDifficult" placeholder="I found... difficult because..."></textarea></div>
+ <div class="field"><label for="reflectionApply">How can you use what you learned?</label><textarea id="reflectionApply" placeholder="I can use this when..."></textarea></div>
+ <div class="card soft"><h3>🏡 Homework / Optional challenge</h3><p>Choose two friends or family members. Write three sentences comparing their personalities. Use at least two adjectives and connectives such as <b>both…and</b>, <b>while</b>, or <b>but</b>.</p><p class="small">Expected output: three written sentences. Complete the homework outside this website and follow your teacher’s submission instructions. This challenge is optional and is not automatically marked as complete.</p></div>
+ <div class="btnrow"><button class="btn secondary" onclick="prev()">← Previous</button><button class="btn primary" onclick="complete(13)">Finish lesson →</button></div>
+</section>
+
+<section class="screen" data-title="Results & Download">
+ <div class="eyebrow">Section H • Your results</div><h1>Congratulations!</h1><p class="lead">You have reached the end of the interactive lesson. Review your information and download your results for your teacher.</p>
+ <div class="hero"><div><span class="tag">LESSON COMPLETE</span><h2 id="resultName" style="margin-top:10px">Student</h2><p id="resultClass" class="muted"></p><div class="resultbig" id="resultScore">—</div><div class="small">Objective quiz score</div></div><div class="hero-emoji">🏆</div></div>
+ <div class="grid2"><div class="card"><h3>Task completion</h3><div class="resultbig" id="taskCount">0/12</div><p class="small">Required learning tasks completed</p></div><div class="card"><h3>Teacher review</h3><div class="resultbig" id="reviewCount">0</div><p class="small">Open-ended responses for teacher review</p></div></div>
+ <div class="callout"><b>Remember:</b> Open-ended writing and listening responses are included for teacher review. The quiz score is only an objective score, not your overall achievement.</div>
+ <button class="btn teal" style="width:100%;padding:15px;margin:10px 0" onclick="downloadExcel()">⬇ DOWNLOAD MY EXCEL RESULTS (.XLSX)</button>
+ <p id="exportStatus" class="small"></p>
+ <h3 style="margin-top:22px">Submit your work to VinSchool LMS</h3><ol><li>Click <b>Download My Excel Results</b>.</li><li>Find the downloaded Excel file on your computer.</li><li>Open <b>VinSchool LMS</b> and go to the correct lesson assignment.</li><li>Upload your Excel file.</li><li>Click <b>Submit Assignment</b> (or the equivalent button).</li><li>Check that the LMS confirms your submission was successful.</li></ol>
+ <div class="callout"><b>Your task is finished only after you have submitted your Excel file to your teacher through VinSchool LMS.</b><br>Downloading does not automatically submit your work.</div>
+ <div class="card soft"><h3>Suggested LMS assignment title</h3><p>Interactive Lesson — Grade 5 English / ESL — End of Term 1</p><h3>Ready-to-paste LMS description</h3><p>Complete the interactive lesson by following each task in order. Enter your name and class before starting. After completing all required tasks, download your Excel results and upload the file to this assignment in VinSchool LMS.</p></div>
+ <div class="btnrow"><button class="btn secondary" onclick="go(1)">Review lesson tasks</button><button class="btn primary" onclick="downloadExcel()">Download Excel again</button></div>
+</section>
+</main></div>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script>
+const titles=[...document.querySelectorAll('.screen')].map(s=>s.dataset.title);
+const screens=[...document.querySelectorAll('.screen')];
+const nav=document.getElementById('nav');
+let current=0, registered=false, quizSubmitted=false, mainIdeaRecorded=false;
+const completed=new Set();
+const quiz=[
+ {q:"Which connective shows that two people share a quality?",o:["while","both…and","but","because"],a:1,e:"Both…and shows a similarity."},
+ {q:"Lan listens until others finish. Which adjective best describes her?",o:["patient","careless","rude","lazy"],a:0,e:"Listening and waiting calmly show patience."},
+ {q:"“My head hurts.” Which symptom is this?",o:["fever","cough","headache","runny nose"],a:2,e:"A headache is pain in your head."},
+ {q:"“My throat feels sore.” What symptom is described?",o:["sore throat","runny nose","fever","cough"],a:0,e:"The speaker describes a sore throat."},
+ {q:"Which symptom did Speaker B describe?",o:["headache","dry cough","runny nose","sore throat"],a:2,e:"Speaker B says their nose keeps running."},
+ {q:"Which city has museums and a large food market?",o:["Riverside City","Harbour City","Garden City","Old Harbour Square"],a:1,e:"Harbour City has museums and a large food market."},
+ {q:"What does “used to” usually tell us?",o:["Something happening now","Something from before","A future plan","A personal feeling"],a:1,e:"Used to describes a past situation or habit."},
+ {q:"What is the main idea of the Old Harbour Square presentation?",o:["The market has closed","People stopped visiting the square","The square became a greener community place","The ferry is new"],a:2,e:"The presentation explains how the square changed into a greener place for the community."},
+ {q:"Which detail supports the main idea about the square today?",o:["There were few trees","People crossed to reach the ferry","There are shaded trees and benches","Fruit was sold at a small market"],a:2,e:"Shaded trees and benches show the square is greener and more welcoming now."},
+ {q:"Which detail is part of the Tet information card?",o:["Families visit relatives","Everyone travels overseas","Schools stay open all night","People stop preparing food"],a:0,e:"The card says families visit relatives at Tet."}
+];
+let qIndex=0, qAnswers=Array(quiz.length).fill(null), qScore=null;
+function buildNav(){nav.innerHTML='';titles.forEach((t,i)=>{let b=document.createElement('button');b.className='navitem';b.innerHTML=`<span class="num">${i===0?'↗':i}</span><span>${t}</span>`;b.onclick=()=>{if(i===0||(registered&&(i<=current||completed.has(i)||(i===14&&completed.has(14)))))go(i)};b.id='nav'+i;nav.appendChild(b)})}
+function updateProgress(){let total=12,done=[...completed].filter(x=>x>=2&&x<=13).length;let p=Math.round(done/total*100);document.getElementById('pct').textContent=p+'%';document.getElementById('bar').style.width=p+'%';screens.forEach((s,i)=>{let b=document.getElementById('nav'+i);if(b){b.classList.toggle('active',i===current);b.classList.toggle('done',completed.has(i))}})}
+function go(i){if(i>0&&!registered)return;current=Math.max(0,Math.min(i,screens.length-1));screens.forEach((s,j)=>s.classList.toggle('active',j===current));updateProgress();if(current===12)renderQuiz();if(current===14)renderResults();window.scrollTo({top:0,behavior:'smooth'})}
+function next(){go(current+1)}function prev(){go(current-1)}
+function register(){let n=document.getElementById('studentName').value.trim(),c=document.getElementById('studentClass').value;let e=document.getElementById('regError');if(!n||!c){e.textContent='Please enter your name and choose your class before starting.';return}registered=true;document.getElementById('topStudent').textContent=n+' · '+c+' · Grade 5';go(1)}
+function complete(i){
+ const required={2:[['warmA','Add a personality word for Friend A.'],['warmB','Add a personality word for Friend B.']],3:[['personSentence','Write a comparison sentence.']],4:[['sharedQuality','Complete the comparison chart.'],['readCompare','Write one comparison sentence.']],5:[['writeCompare','Write your two comparison sentences.']],6:[['symptomSentence','Write a sentence using a symptom.']],7:[['speakerA','Record your first answer for Speaker A.'],['speakerB','Record your first answer for Speaker B.']],8:[['cityReason1','Add your first city reason.'],['cityReason2','Add your second city reason.'],['cityPreference','Write your city preference.']],9:[['thenNow1','Choose an answer about “used to”.'],['thenNow2','Complete the sentence about the square.'],['thenNowSentence','Write a then-and-now sentence.']],10:[['squareDetail1','Add one supporting detail.'],['squareDetail2','Add a second supporting detail.']],11:[['festivalResponse','Write your festival response.'],['festivalExit','Complete the festival exit ticket.']],12:[],13:[['reflectionLearned','Write one thing you learned.']]};
+ const missing=(required[i]||[]).filter(([id])=>!val(id));
+ if(missing.length){alert(missing[0][1]);return}
+ if(i===6&&[...document.querySelectorAll('#symptomMatch select')].some(x=>!x.value)){alert('Please match all five symptoms before continuing.');return}
+ if(i===3&&[...document.querySelectorAll('#personMatch select')].some(x=>!x.value)){alert('Please complete all four personality matches before continuing.');return}
+ if(i===8&&!checked('city')){alert('Please choose a city before continuing.');return}
+ if(i===10&&!mainIdeaRecorded){alert('Please record your first listening answer before continuing.');return}
+ if(i===12&&!quizSubmitted){alert('Please submit the quiz before continuing.');return}
+ completed.add(i);if(i===13){completed.add(14);go(14)}else go(i+1)
+}
+function val(id){return document.getElementById(id)?.value?.trim()||''}
+function checked(name){return document.querySelector(`input[name="${name}"]:checked`)?.value||''}
+function checkPerson(){let selects=[...document.querySelectorAll('#personMatch select')];let n=selects.filter(s=>s.value===s.dataset.answer).length;let ok=val('connect1')==='both'&&val('connect2')==='while';let f=document.getElementById('personFeedback');f.className='feedback show '+(n===4&&ok?'good':'try');f.textContent=`You matched ${n}/4 adjectives ${ok?'and used both connectives correctly.':'correctly. Review the word meanings and connectives, then try again.'}`}
+function checkMatch(container,feedback){let ss=[...document.querySelectorAll('#'+container+' select')],n=ss.filter(s=>s.value===s.dataset.answer).length,f=document.getElementById(feedback);f.className='feedback show '+(n===ss.length?'good':'try');f.textContent=`You matched ${n}/${ss.length} correctly. ${n===ss.length?'Excellent work!':'Check the meanings and try again.'}`}
+function submitMainIdea(){let a=checked('mainIdea'),f=document.getElementById('mainIdeaFeedback');if(!a){f.className='feedback show try';f.textContent='Choose an answer before recording your first response.';return}mainIdeaRecorded=true;f.className='feedback show '+(a==='A'?'good':'try');f.textContent='Your first listening response has been recorded. Now you may reveal the script and find two supporting details.';document.getElementById('squareTranscript').open=true}
+function renderQuiz(){let q=quiz[qIndex];document.getElementById('qProgress').textContent=`Question ${qIndex+1} of ${quiz.length}`;document.getElementById('qBar').style.width=((qIndex+1)/quiz.length*100)+'%';document.getElementById('questionText').textContent=q.q;document.getElementById('qStatus').textContent=quizSubmitted?'Submitted':'In progress';let opts=document.getElementById('quizOptions');opts.innerHTML='';q.o.forEach((o,i)=>{let l=document.createElement('label');l.className='option';l.innerHTML=`<input type="radio" name="currentQ" value="${i}" ${qAnswers[qIndex]===i?'checked':''}> <span>${String.fromCharCode(65+i)}. ${o}</span>`;l.querySelector('input').onchange=()=>qAnswers[qIndex]=i;opts.appendChild(l)});document.getElementById('qPrev').disabled=qIndex===0;document.getElementById('qNext').textContent=qIndex===quiz.length-1?'Last question':'Next question →'}
+function quizMove(d){let selected=document.querySelector('input[name="currentQ"]:checked');if(selected)qAnswers[qIndex]=Number(selected.value);qIndex=Math.max(0,Math.min(quiz.length-1,qIndex+d));renderQuiz()}
+function submitQuiz(){let selected=document.querySelector('input[name="currentQ"]:checked');if(selected)qAnswers[qIndex]=Number(selected.value);let unanswered=qAnswers.filter(x=>x===null).length;if(unanswered){let f=document.getElementById('quizResult');f.className='feedback show try';f.textContent=`You still have ${unanswered} unanswered question(s). You can answer them before submitting.`;return}qScore=qAnswers.reduce((s,a,i)=>s+(a===quiz[i].a?1:0),0);quizSubmitted=true;let f=document.getElementById('quizResult');f.className='feedback show good';f.innerHTML=`<b>Your score: ${qScore}/${quiz.length} (${qScore*10}%).</b><br>`+quiz.map((q,i)=>`Q${i+1}: ${qAnswers[i]===q.a?'Correct':'Review'} — ${q.e}`).join('<br>');document.getElementById('qStatus').textContent='Submitted';}
+function retryQuiz(){qAnswers=Array(quiz.length).fill(null);qScore=null;quizSubmitted=false;qIndex=0;document.getElementById('quizResult').className='feedback';renderQuiz()}
+function countReview(){let ids=['warmWhy','personSentence','readCompare','writeCompare','speakerA','speakerB','listenEvidence','cityPreference','thenNowSentence','squareDetail1','squareDetail2','festivalResponse','festivalExit','reflectionLearned','reflectionDifficult','reflectionApply'];return ids.filter(id=>val(id)).length}
+function renderResults(){document.getElementById('resultName').textContent=val('studentName');document.getElementById('resultClass').textContent='Grade 5 · '+val('studentClass')+' · English / ESL';document.getElementById('resultScore').textContent=qScore===null?'Not submitted':qScore+'/10';document.getElementById('taskCount').textContent=[...completed].filter(x=>x>=2&&x<=13).length+'/12';document.getElementById('reviewCount').textContent=countReview()}
+function resultRows(){let rows=[];function add(task,question,id,correct='For Teacher Review',score=''){rows.push([task,question,val(id),correct,correct==='For Teacher Review'?'For Teacher Review':(val(id).toLowerCase().includes(correct.toLowerCase())?'Review manually':'For Teacher Review'),score])}
+add('Warm-up','Friend A personality word','warmA');add('Warm-up','Friend B personality word','warmB');add('Warm-up','Picture/action clue','warmWhy');
+add('Personality vocabulary','Personality comparison sentence','personSentence');add('Read two friends','Shared quality','sharedQuality');add('Read two friends','Lan difference','lanDifferent');add('Read two friends','Minh difference','minhDifferent');add('Read two friends','Text evidence','profileEvidence');add('Read two friends','Comparison sentence','readCompare');
+add('Write comparison','Two comparison sentences','writeCompare');add('Symptoms vocabulary','Symptom sentence','symptomSentence');add('Listening symptoms','Speaker A first listening answer','speakerA');add('Listening symptoms','Speaker B first listening answer','speakerB');add('Listening symptoms','Transcript evidence after listening','listenEvidence');
+add('City preference','Selected city','city');rows[rows.length-1][2]=checked('city');add('City preference','Reason 1','cityReason1');add('City preference','Reason 2','cityReason2');add('City preference','Complete preference','cityPreference');
+add('Then and now','Then/now sentence','thenNowSentence');add('Main idea listening','First main-idea choice','mainIdea');rows[rows.length-1][2]=checked('mainIdea');add('Main idea listening','Supporting detail 1','squareDetail1');add('Main idea listening','Supporting detail 2','squareDetail2');add('Festival response','Three-sentence response','festivalResponse');add('Festival response','Exit ticket','festivalExit');
+add('Reflection','One thing learned','reflectionLearned');add('Reflection','Difficult part','reflectionDifficult');add('Reflection','How I can apply learning','reflectionApply');
+return rows}
+function downloadExcel(){let status=document.getElementById('exportStatus');if(typeof XLSX==='undefined'){status.textContent='Excel export library could not load. Please connect to the internet and reload this page, then try again.';return}
+let name=val('studentName'),cls=val('studentClass'),date=new Date().toLocaleString();
+let wb=XLSX.utils.book_new();
+let info=[['STUDENT INFORMATION',''],['Field','Value'],['Student Name',name],['Class',cls],['Grade','Grade 5'],['Subject','English / ESL'],['Unit','Units 1–5'],['Week','End of Term 1'],['Lesson Topic','End of Term Review 1'],['Completion Date',date],['Completion Status',completed.has(14)?'Completed':'Incomplete'],['Lesson Sequence','3 periods × 35 minutes (105 minutes total)']];
+let ws1=XLSX.utils.aoa_to_sheet(info);ws1['!cols']=[{wch:26},{wch:58}];XLSX.utils.book_append_sheet(wb,ws1,'Student Information');
+let act=[['ACTIVITY RESULTS'],['Task','Question / Activity','Student Answer','Correct Answer','Result','Score'],...resultRows()];let ws2=XLSX.utils.aoa_to_sheet(act);ws2['!cols']=[{wch:24},{wch:36},{wch:55},{wch:30},{wch:22},{wch:12}];XLSX.utils.book_append_sheet(wb,ws2,'Activity Results');
+let qr=[['QUIZ RESULTS'],['Question Number','Question','Student Answer','Correct Answer','Status','Points Earned','Total Points'],...quiz.map((q,i)=>[i+1,q.q,qAnswers[i]===null?'Not answered':q.o[qAnswers[i]],q.o[q.a],qAnswers[i]===q.a?'Correct':qAnswers[i]===null?'Not answered':'Incorrect',qAnswers[i]===q.a?1:0,1]),[],['Quiz Score',qScore===null?'Not submitted':qScore],['Total Questions',quiz.length],['Percentage',qScore===null?'Not available':qScore*10+'%']];let ws3=XLSX.utils.aoa_to_sheet(qr);ws3['!cols']=[{wch:17},{wch:64},{wch:34},{wch:34},{wch:18},{wch:15},{wch:15}];XLSX.utils.book_append_sheet(wb,ws3,'Quiz Results');
+let refl=[['REFLECTION'],['Prompt','Student Response'],['What is one new thing you learned?',val('reflectionLearned')],['What did you find difficult?',val('reflectionDifficult')],['How can you use what you learned?',val('reflectionApply')],['Festival exit ticket',val('festivalExit')]];let ws4=XLSX.utils.aoa_to_sheet(refl);ws4['!cols']=[{wch:42},{wch:85}];XLSX.utils.book_append_sheet(wb,ws4,'Reflection');
+let total=12,done=[...completed].filter(x=>x>=2&&x<=13).length;let summary=[['SUMMARY'],['Measure','Result'],['Required tasks completed',done],['Total required tasks',total],['Task completion',done+'/'+total],['Objective quiz score',qScore===null?'Not submitted':qScore+'/'+quiz.length],['Quiz percentage',qScore===null?'Not available':qScore*10+'%'],['Open-ended responses for teacher review',countReview()],['Completion status',completed.has(14)?'Completed':'Incomplete'],['Completion date',date],['Assessment note','Quiz score is objective only. Open-ended responses require teacher review.']];let ws5=XLSX.utils.aoa_to_sheet(summary);ws5['!cols']=[{wch:44},{wch:82}];XLSX.utils.book_append_sheet(wb,ws5,'Summary');
+[ws1,ws2,ws3,ws4,ws5].forEach(ws=>{ws['!rows']=[{hpt:24},{hpt:22}]});
+let safe=s=>(s||'Student').replace(/[\\/:*?"<>|]/g,'_').replace(/\s+/g,'_');let filename=`G5_${safe(cls)}_${safe(name)}_EndOfTerm1_Results.xlsx`;XLSX.writeFile(wb,filename);status.textContent='Your Excel workbook has been created and downloaded. Please upload it to the correct VinSchool LMS assignment.'}
+buildNav();updateProgress();
+</script>
+</body></html>
